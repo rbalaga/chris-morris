@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 5
+      Hands-on Project 5-1
+
+      Author: Chris Morris
+      Date:   9/24/21
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hands-on Project 5-1</title>
+</head>
+
+<body>
+   <h1>
+      Hands-on Project 5-1
+   </h1>
+   
+   <p></p>
+   <p></p>
+   <p></p>
+   <p></p>
+    <script>
+        "use strict";
+         document.getElementsByTagName("p")[0].innerHTML =
+         "Web browser name: " + navigator.appName;
+         document.getElementsByTagName("p")[1].innerHTML =
+         "Web browser version: " + navigator.appVersion;
+         document.getElementsByTagName("p")[2].innerHTML =
+          "Operating platform: " + navigator.platform;
+        document.getElementsByTagName("p")[3].innerHTML =
+         "User agent: " + navigator.userAgent;
+    </script>
+    <!--
+    6.a: yes the information returned seems to be accurate showing chrome since I am using Edge Chromium
+        
+    6.b: I believe it looks like the web browser name, version, and user agent can change depending on the broswer opened in
+    
+    6.c: the navigator seems to try to detect aspects of a browser but even in edge chromium it mentions things like safari and mozilla so I don't 
+        think it is acually a very accurate display of it and doesn't give you exact results.
+-->
+</body>
+</html>
