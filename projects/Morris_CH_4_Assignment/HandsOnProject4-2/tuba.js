@@ -57,7 +57,7 @@ function verifyCrops() {
     try {
         for (var i = 0; i < 7; i++) {
             if (cropsFieldset.getElementsByTagName("input")[i].checked) {
-                cropsComplete = true;
+                cropscomplete = true;
                 messageElement.innerHTML = ""; // clear previous message or recommendation
                 testFormCompleteness();
                 i = 8;
